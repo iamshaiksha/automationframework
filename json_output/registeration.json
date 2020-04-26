@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Test Fundoonote Registration valid Credentials",
+        "description": "",
+        "id": "test-fundoonote-registration-smoke-scenario;test-fundoonote-registration-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10387212396,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open chrome and start application",
+            "match": {
+              "location": "RegistrationStepDef.open_chrome_and_start_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1175336769,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I entered name \"shaiksha\" email \"iamshaiksha2019@gmail.com\" password \"Shaiksha@123\" mobilenumber \"7993374636\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shaiksha",
+                  "offset": 16
+                },
+                {
+                  "val": "iamshaiksha2019@gmail.com",
+                  "offset": 33
+                },
+                {
+                  "val": "Shaiksha@123",
+                  "offset": 70
+                },
+                {
+                  "val": "7993374636",
+                  "offset": 98
+                }
+              ],
+              "location": "RegistrationStepDef.i_entered_name_email_password_mobilenumber(String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 450092226460,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should be able to login successfully",
+            "match": {
+              "location": "RegistrationStepDef.user_should_be_able_to_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Test Fundoonote Registration smoke scenario",
+    "description": "",
+    "id": "test-fundoonote-registration-smoke-scenario",
+    "keyword": "Feature",
+    "uri": "src/main/java/com/bridgelabz/automationframework/features/RegistrationFeature.feature"
+  }
+]

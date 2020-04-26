@@ -1,0 +1,74 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "TestLogin valid Credentials",
+        "description": "",
+        "id": "test-facebook-smoke-scenario;testlogin-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14163468244,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open firefox and start application",
+            "match": {
+              "location": "StepDefLogin.open_firefox_and_start_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 400165662,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I entered email \"iamshaiksha2019@gmail.com\" and valid \"Shaiksha@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "iamshaiksha2019@gmail.com",
+                  "offset": 17
+                },
+                {
+                  "val": "Shaiksha@123",
+                  "offset": 55
+                }
+              ],
+              "location": "StepDefLogin.i_entered_email_and_valid(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97687802,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should be able to login successfully",
+            "match": {
+              "location": "StepDefLogin.user_should_be_able_to_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Test facebook smoke scenario",
+    "description": "",
+    "id": "test-facebook-smoke-scenario",
+    "keyword": "Feature",
+    "uri": "src/main/java/com/bridgelabz/automationframework/features/loginFeatures.feature"
+  }
+]
